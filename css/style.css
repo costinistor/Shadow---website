@@ -1,0 +1,296 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Allura|Lato:300,400,700');
+/*
+    font-family: 'Lato', sans-serif;
+    font-family: 'Allura', cursive;
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+body {
+	color: #333;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+/* CSS Header */
+header {
+	background: url(../images/header-bg.jpg) no-repeat;
+	background-size: cover;
+}
+.header {
+	padding-top: 10px;
+	overflow: hidden;
+}
+.logo {
+	display: block;
+	float: left;
+	color: #fff;
+	font-size: 22px;
+	font-family: 'Allura', cursive;
+}
+.mobile-nav {
+	display: none;
+}
+.nav-bar {
+	margin-top: 18px;
+	display: block;
+	float: right;
+}
+.nav-bar li {
+	list-style: none;
+	float: left;
+}
+.nav-bar a {
+	padding: 8px 12px;
+	color: #ff941a;
+	display: block;
+}
+.nav-bar a:hover {
+	background: rgba(0,0,0,0.4);
+	border-radius: 4px;
+}
+.tag-line h1 {
+	padding: 100px 230px 150px;
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+}
+
+
+/* CSS Services */
+.services {
+	padding: 60px 0;
+	overflow: hidden;
+}
+.our-services {
+	width: 50%;
+	float: left;
+}
+.our-services h2 {
+	margin-bottom: 15px;
+}
+.our-services ul {
+	padding: 10px 0;
+}
+.our-services li {
+	list-style: url(../images/arrow-list.png) inside;
+	line-heught: 20px;
+}
+.our-services a {
+	color: #fff;
+	font-weight: bold;
+	background: #ff941a;
+	padding: 8px 12px;
+	border-radius: 4px;
+	margin-top: 10px;
+	display: table;
+}
+.video {
+	width: 50%;
+	float: left;
+}
+.video img {
+	float: right;
+}
+/* CSS Info */
+.info {
+	text-align: center;
+	border-top: 1px solid #ddd;
+	background: #efefef;
+	padding: 70px 0;
+}
+.req-info {
+	padding: 0 180px;
+	margin-bottom: 100px;
+}
+.req-info h3 {
+	font-size: 26px;
+	line-height: 36px;
+	margin-bottom: 40px;
+}
+.req-info a {
+	background: #ff941a;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px 20px;
+	border-radius: 4px;
+}
+.branding {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 30px 0;
+	margin-top: 50px;
+	overflow: hidden;
+}
+.branding  li {
+	list-style: none;
+	width: 25%;
+	float: left;
+	border-right: 1px solid #ddd;
+	box-sizing: border-box;
+}
+.branding  li:last-child {
+	border-right: none;
+}
+.branding img {
+	padding: 10px 0;
+}
+/* CSS Footer */
+footer {
+	background: #333;
+	color: #fff;
+	padding: 40px 0;
+	font-size: 14px;
+}
+.footer {
+	overflow: hidden;
+}
+.col-one-fourth {
+	width: 25%;
+	float: left;
+}
+.col-one-fourth h3 {
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+.col-one-fourth p {
+	padding-bottom: 8px;
+}
+.col-one-fourth h2 {
+	font-family: 'Allura', cursive;
+	font-size: 34px;
+}
+.phone-num {
+	font-size: 20px;
+}
+.social-icon a {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+/* CSS Media Query */
+@media(max-width: 1099px){
+	.container {
+		margin: 0 20px;
+	}
+}
+
+@media(max-width: 880px){
+	/* CSS Header */
+	.tag-line h1 {
+		padding: 50px 130px 90px;
+	}
+	/* CSS Services */
+	.our-services {
+		width: 100%;
+		float: none;
+	}
+	.video {
+		width: 100%;
+		margin-top: 50px;
+		float: none;
+		text-align: center;
+	}
+	.video img {
+		float: none;
+	}
+	/* CSS Info */
+	.req-info {
+		padding: 0 80px;
+	}
+	.branding li {
+		width: 50%;
+	}
+	.branding li:nth-child(2) {
+		border-right: none;
+	}
+	/* CSS Footer */
+	.col-one-fourth {
+		width: 50%;
+		margin-bottom: 30px;
+	}	
+}
+@media(max-width: 680px){
+	/* CSS Header */
+	.mobile-nav {
+		display: inherit;
+		border: 1px solid #fff;
+		width: 40px;
+		height: 35px;
+		float: right;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	.mobile-nav i {
+		display: block;
+		width: 32px;
+		height: 5px;
+		background: #ff941a;
+		margin: 5px auto;
+	}
+	.nav-bar {
+		display: none;
+		width: 50%;
+		margin-top: 4px;
+		top: 50px;
+		right: 10px;
+		position: absolute;
+		background: rgba(0,0,0,0.9);
+	}
+	.nav-bar li {
+		display: block;
+		float: none;
+		border-bottom: 1px solid #333;
+	}
+	.nav-bar li:last-of-type {
+		border-bottom: none;
+	}
+	.nav-bar a {
+		display: block;
+		padding: 10px 12px;
+	}
+	.tag-line h1 {
+		padding: 30px 20px 50px;
+	}
+	/* CSS Info */
+	.req-info {
+		padding: 0 20px;
+	}
+	.branding {
+		padding: 10px 0;
+	}
+	.branding li {
+		width: 80%;
+		float: none;
+		margin: 0 auto;
+		border-right: none;
+		border-bottom: 1px solid #ddd;
+	}
+	.branding li:last-child {
+		border-bottom: none;
+	}
+	/* CSS Footer */
+	.col-one-fourth {
+		width: 100%;
+		float: none;
+	}
+}
+
+
+
+
+
+
+
